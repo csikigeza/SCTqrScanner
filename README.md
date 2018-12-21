@@ -16,6 +16,13 @@ The SCTqrScanner read special QR codes  created for SEPA Credit Transfer. After 
 
 ## Screens
 
+<p align="center">
+<img src="https://github.com/csikigeza/SCTqrScanner/blob/master/sctScreen1.PNG" width="350" title="Start Screen">
+<img src="https://github.com/csikigeza/SCTqrScanner/blob/master/sctScreen2.PNG" width="350" alt="Screen2">
+<img src="https://github.com/csikigeza/SCTqrScanner/blob/master/sctScreen3.PNG" width="350" alt="Screen3">
+<img src="https://github.com/csikigeza/SCTqrScanner/blob/master/sctScreen4.PNG" width="350" alt="Screen4">
+</p>
+
 ![Screen](https://github.com/csikigeza/SCTqrScanner/blob/master/sctScreen1.PNG)
 
 ## Installation
