@@ -14,6 +14,10 @@ The SCTqrScanner read special QR codes  created for SEPA Credit Transfer. After 
 - Xcode 10.1+
 - Swift 4.2+
 
+## Screens
+
+![Screen](https://github.com/csikigeza/SCTqrScanner/blob/master/sctScreen1.PNG)
+
 ## Installation
 
 ### CocoaPods

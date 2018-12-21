@@ -66,9 +66,37 @@ class SCTqrScannerViewController: UIViewController {
     func showResult(_ result: SCTqrResult?) {
         self.resultView.isHidden = false
         if let sctQRResult = result {
-            self.resultLbl.text = sctQRResult.iban
+            let name = "NAME: \(sctQRResult.name)"
+            let iban = "\nIBAN: \(sctQRResult.iban)"
+            
+            var bicStr = "\nBIC: -"
+            if let bic = sctQRResult.bic {
+                 bicStr = "\nBIC: \(bic)"
+            }
+           
+            var amountStr = "\nBIC: -"
+            if let amount = sctQRResult.amount {
+                amountStr = "\nBIC: \(amount)"
+            }
+            
+            var purposeStr = "\nBIC: -"
+            if let purpose = sctQRResult.purpose {
+                purposeStr = "\nBIC: \(purpose)"
+            }
+            
+            var remittanceStr = "\nBIC: -"
+            if let remittance = sctQRResult.remittance {
+                remittanceStr = "\nBIC: \(remittance)"
+            }
+            
+            var referenceStr = "\nBIC: -"
+            if let reference = sctQRResult.reference {
+                referenceStr = "\nBIC: \(reference)"
+            }
+        
+            self.resultLbl.text = name + iban + bicStr + amountStr + purposeStr + remittanceStr + referenceStr
         } else {
-            self.resultLbl.text = "ERROR"
+            self.resultLbl.text = "ERROR: \nQR does not conform to SCT Standards"
         }
     }
 }
