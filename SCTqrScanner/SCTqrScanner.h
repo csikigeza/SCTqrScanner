@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-//! Project version number for SCPqrScanner.
+//! Project version number for SCTqrScanner.
 FOUNDATION_EXPORT double SCTqrScannerVersionNumber;
 
-//! Project version string for SCPqrScanner.
+//! Project version string for SCTqrScanner.
 FOUNDATION_EXPORT const unsigned char SCTqrScannerVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <EPCqrScanner/PublicHeader.h>
+// In this header, you should import all the public headers of your framework using statements like #import <SCTqrScanner/PublicHeader.h>
 
 

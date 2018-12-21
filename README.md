@@ -68,7 +68,7 @@ override func viewWillAppear(_ animated: Bool) {
     }
 }
 ```
-The qrResult can be nil, if the QR does not conform to the SCT Standards ([See SCT Standards](https://www.europeanpaymentscouncil.eu/sites/default/files/kb/file/2018-05/SCT069-12%20v2.1%20Quick%20Response%20Code%20-%20Guidelines%20to%20Enable%20the%20Data%20Capture%20for%20the%20Initiation%20of%20a%20SCT.pdf)).
+The qrResult can be nil, if the QR does not conform to the SEPA Credit Transfer Standards defined from European Payments Council ([See SCT Standards](https://www.europeanpaymentscouncil.eu/document-library/guidance-documents/quick-response-code-guidelines-enable-data-capture-initiation)).
 Otherwise the respons has SCTqrResult type.
 
 SCTqrResult contains obligatory the name and iban.

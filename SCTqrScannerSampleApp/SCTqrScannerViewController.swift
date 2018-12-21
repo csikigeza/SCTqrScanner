@@ -65,8 +65,8 @@ class SCTqrScannerViewController: UIViewController {
     
     func showResult(_ result: SCTqrResult?) {
         self.resultView.isHidden = false
-        if let epcQRResult = result {
-            self.resultLbl.text = epcQRResult.iban
+        if let sctQRResult = result {
+            self.resultLbl.text = sctQRResult.iban
         } else {
             self.resultLbl.text = "ERROR"
         }

@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     
     @IBAction func touchUpInsideStartBtn(_ sender: AnyObject) {
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        let viewController = storyBoard.instantiateViewController(withIdentifier: "SCPqrScannerViewController")
+        let viewController = storyBoard.instantiateViewController(withIdentifier: "SCTqrScannerViewController")
         self.present(viewController, animated: true, completion: nil)
     }
     

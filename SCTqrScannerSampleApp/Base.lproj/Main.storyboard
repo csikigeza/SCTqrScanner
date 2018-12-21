@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KrB-vW-QZl">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -9,19 +13,19 @@
         <!--View Controller-->
         <scene sceneID="DSx-Tg-XFf">
             <objects>
-                <viewController id="KrB-vW-QZl" customClass="ViewController" customModule="EPCqrScannerExample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="KrB-vW-QZl" customClass="ViewController" customModule="SCTqrScannerSampleApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OyS-bf-S03">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EPC QR scanner Example App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9pK-Cl-RMh">
-                                <rect key="frame" x="20" y="70" width="560" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SEPA Credit Transfer QR Scanner" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9pK-Cl-RMh">
+                                <rect key="frame" x="20" y="70" width="335" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M8v-9t-ay2">
-                                <rect key="frame" x="20" y="171" width="560" height="50"/>
+                                <rect key="frame" x="20" y="171" width="335" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="LJH-s5-Oxs"/>
@@ -58,18 +62,18 @@
         <!--Tqr Scanner View Controller-->
         <scene sceneID="xGI-LQ-IHq">
             <objects>
-                <viewController storyboardIdentifier="EPCqrScannerViewController" id="FVl-Lk-zQ9" customClass="SCTqrScannerViewController" customModule="EPCqrScannerExample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SCTqrScannerViewController" id="FVl-Lk-zQ9" customClass="SCTqrScannerViewController" customModule="SCTqrScannerSampleApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="29i-Fd-Noq">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5YN-bO-Y29">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="70"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5O3-rD-7Gq">
-                                        <rect key="frame" x="0.0" y="0.0" width="85" height="70"/>
+                                        <rect key="frame" x="0.0" y="20" width="85" height="50"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="70" id="BU8-H9-0S3"/>
+                                            <constraint firstAttribute="height" constant="50" id="BU8-H9-0S3"/>
                                             <constraint firstAttribute="width" constant="85" id="dla-kZ-Ox8"/>
                                         </constraints>
                                         <state key="normal" title="Back">
@@ -79,8 +83,11 @@
                                             <action selector="touchUpInsideBackBtn:" destination="FVl-Lk-zQ9" eventType="touchUpInside" id="ogC-yk-MvX"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EPC QR Scanner" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mhl-oG-DXn">
-                                        <rect key="frame" x="236.5" y="29" width="127.5" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCT QR Scanner" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mhl-oG-DXn">
+                                        <rect key="frame" x="124" y="20" width="127.5" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="0z3-Iv-ygr"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -88,7 +95,7 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.12941176469999999" green="0.60784313729999995" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="Mhl-oG-DXn" secondAttribute="bottom" constant="20" id="D9O-5W-xfi"/>
+                                    <constraint firstAttribute="bottom" secondItem="Mhl-oG-DXn" secondAttribute="bottom" id="D9O-5W-xfi"/>
                                     <constraint firstItem="5O3-rD-7Gq" firstAttribute="leading" secondItem="5YN-bO-Y29" secondAttribute="leading" id="L8M-9g-nWx"/>
                                     <constraint firstAttribute="height" constant="70" id="Y2k-Ml-KMr"/>
                                     <constraint firstAttribute="bottom" secondItem="5O3-rD-7Gq" secondAttribute="bottom" id="cdL-Qg-xEk"/>
@@ -96,14 +103,14 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4d6-WJ-brF">
-                                <rect key="frame" x="0.0" y="70" width="600" height="530"/>
+                                <rect key="frame" x="0.0" y="70" width="375" height="597"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LHs-kv-qK5">
-                                <rect key="frame" x="0.0" y="70" width="600" height="530"/>
+                                <rect key="frame" x="0.0" y="70" width="375" height="597"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HtX-nJ-l6G">
-                                        <rect key="frame" x="20" y="460" width="560" height="50"/>
+                                        <rect key="frame" x="20" y="527" width="335" height="50"/>
                                         <color key="backgroundColor" red="0.12941176469999999" green="0.60784313729999995" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="DVV-cr-qbQ"/>
@@ -116,7 +123,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LSk-J6-OQ0">
-                                        <rect key="frame" x="20" y="50" width="560" height="360"/>
+                                        <rect key="frame" x="20" y="50" width="335" height="427"/>
                                         <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.12941176469999999" green="0.60784313729999995" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
