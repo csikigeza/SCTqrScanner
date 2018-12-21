@@ -1,4 +1,4 @@
-![](https://github.com/csikigeza/SCTqrScanner/blob/master/SCTqrScanner.PNG)
+![MainImage](https://github.com/csikigeza/SCTqrScanner/blob/master/SCTqrScanner.png)
 # SCTqrScanner
 
 The SCTqrScanner read special QR codes  created for SEPA Credit Transfer. After scan the reader returns the info from QR in special SCTqrResult. This Result contains the name and the IBAN (Mandatory fileds), bic, amount, purpose, remittance or reference, which are optional fields
