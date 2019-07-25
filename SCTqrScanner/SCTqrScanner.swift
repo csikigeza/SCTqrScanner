@@ -49,11 +49,6 @@ public class SCTqrScanner: NSObject {
 }
 
 // MARK: - Code processing
-extension SCTqrScanner {
-    
-   
-}
-
 protocol CodeReader {
     func startReading(completion: @escaping (SCTqrResult?) -> Void)
     func stopReading()

@@ -74,24 +74,24 @@ class SCTqrScannerViewController: UIViewController {
                  bicStr = "\nBIC: \(bic)"
             }
            
-            var amountStr = "\nBIC: -"
+            var amountStr = "\nAmount: -"
             if let amount = sctQRResult.amount {
-                amountStr = "\nBIC: \(amount)"
+                amountStr = "\nAmount: \(amount)"
             }
             
-            var purposeStr = "\nBIC: -"
+            var purposeStr = "\nPurpose: -"
             if let purpose = sctQRResult.purpose {
-                purposeStr = "\nBIC: \(purpose)"
+                purposeStr = "\nPurpose: \(purpose)"
             }
             
-            var remittanceStr = "\nBIC: -"
+            var remittanceStr = "\nRemittance: -"
             if let remittance = sctQRResult.remittance {
-                remittanceStr = "\nBIC: \(remittance)"
+                remittanceStr = "\nRemittance: \(remittance)"
             }
             
-            var referenceStr = "\nBIC: -"
+            var referenceStr = "\nReference: -"
             if let reference = sctQRResult.reference {
-                referenceStr = "\nBIC: \(reference)"
+                referenceStr = "\nReference: \(reference)"
             }
         
             self.resultLbl.text = name + iban + bicStr + amountStr + purposeStr + remittanceStr + referenceStr
