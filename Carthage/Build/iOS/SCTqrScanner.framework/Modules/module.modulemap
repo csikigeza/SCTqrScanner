@@ -1,0 +1,11 @@
+framework module SCTqrScanner {
+  umbrella header "SCTqrScanner.h"
+
+  export *
+  module * { export * }
+}
+
+module SCTqrScanner.Swift {
+    header "SCTqrScanner-Swift.h"
+    requires objc
+}
