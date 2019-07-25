@@ -51,7 +51,7 @@ You can now `import SCTqrScanner` framework into your files.
 
 ## Usage
 
-SInce iOS10+, you will need the permision from user  for the camera usage. 
+Since iOS10+, you will need the permision from user  for the camera usage. 
 For that you will need to add the **Privacy - Camera Usage Description** *(NSCameraUsageDescription)* field in your Info.plist file.
 
 Create your own codeReader and videoLayer properties on the ViewController on which you want to use the SCTqrScanner.
