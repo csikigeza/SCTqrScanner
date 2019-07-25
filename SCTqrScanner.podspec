@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.description  = "The SCTqrScanner read special QR codes  created for SEPA Credit Transfer. After scan the reader returns the info from QR in special SCTqrResult. This Result contains the name and the IBAN (Mandatory fileds), bic, amount, purpose, remittance or reference, which are optional fields"
   
 #2
-  s.version      = "v0.9.6"
+  s.version      = "0.9.6"
     
 #3
   s.license      = { :type => "MIT", :file => "LICENSE" }
