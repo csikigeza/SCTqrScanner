@@ -53,8 +53,13 @@ You can now `import SCTqrScanner` framework into your files.
 ### Carthage
 
 1. Get Carthage by running `brew install carthage` 
-1. Create a [Cartfile][] in the same directory where your `.xcodeproj` or `.xcworkspace` is
-1. List the desired dependencies in the [Cartfile][], for example:
+1. Create a Cartfile in the same directory where your `.xcodeproj` or `.xcworkspace` is
+
+```
+touch Cartfile
+```
+
+1. List the desired dependencies in the Cartfile, for example:
 
 ```
 gitHub "csikigeza/SCTqrScanner"
