@@ -72,13 +72,13 @@ gitHub "csikigeza/SCTqrScanner"
 - Add the paths to the frameworks you want to use under “Input Files". For example:
 
 ```
-$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework
+$(SRCROOT)/Carthage/Build/iOS/SCTqrScanner.framework
 ```
 
 - Add the paths to the copied frameworks to the “Output Files”. For example:
 
 ```
-$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework
+$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SCTqrScanner.framework
 ```
 
 ## Usage
