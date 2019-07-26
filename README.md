@@ -7,6 +7,7 @@ The SCTqrScanner read special QR codes  created for SEPA Credit Transfer. After 
 [![Swift](https://img.shields.io/badge/swift-4.2%2B-brightgreen.svg)](http://cocoapods.org/pods/SCTqrScanner)
 [![License](https://img.shields.io/badge/license-MIT-black.svg)](http://cocoapods.org/pods/SCTqrScanner)
 [![Platform](https://img.shields.io/badge/platform-iOS-lightgrey.svg)](http://cocoapods.org/pods/SCTqrScanner)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 ## Requirements
 
@@ -48,6 +49,37 @@ $ open MyProject.xcworkspace
 
 You can now `import SCTqrScanner` framework into your files.
 
+
+### Carthage
+
+1. Get Carthage by running `brew install carthage` 
+1. Create a [Cartfile][] in the same directory where your `.xcodeproj` or `.xcworkspace` is
+1. List the desired dependencies in the [Cartfile][], for example:
+
+```
+gitHub "csikigeza/SCTqrScanner"
+```
+
+1. Run `carthage update`
+1. A `Cartfile.resolved` file and a `Carthage` directory will appear in the same directory where your `.xcodeproj` or `.xcworkspace` is
+1. Drag the built `.framework` binaries from `Carthage/Build/<platform>` into your application’s Xcode project.
+1. On your application targets’ _Build Phases_ settings tab, click the _+_ icon and choose _New Run Script Phase_. Create a Run Script in which you specify your shell (ex: `/bin/sh`), add the following contents to the script area below the shell:
+
+```sh
+/usr/local/bin/carthage copy-frameworks
+```
+
+- Add the paths to the frameworks you want to use under “Input Files". For example:
+
+```
+$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework
+```
+
+- Add the paths to the copied frameworks to the “Output Files”. For example:
+
+```
+$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework
+```
 
 ## Usage
 
