@@ -21,7 +21,7 @@ Pod::Spec.new do |spec|
   spec.homepage     = "https://github.com/csikigeza/SCTqrScanner"
 
 #6
-  spec.source       = { :git => "https://github.com/csikigeza/SCTqrScanner.git", :tag => "v1.1.0" }
+  spec.source       = { :git => "https://github.com/csikigeza/SCTqrScanner.git", :tag => "#{spec.version}" }
   spec.source_files  = "SCTqrScanner/**/*.{h,swift}"
   spec.swift_version = "4.2"
 
