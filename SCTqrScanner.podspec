@@ -7,22 +7,22 @@ Pod::Spec.new do |spec|
   spec.name         = "SCTqrScanner"
   spec.summary      = "iOS Scanner for the SEPA Credit Transfer Quick Response Code"
   spec.description  = "The SCTqrScanner read special QR codes  created for SEPA Credit Transfer. After scan the reader returns the info from QR in special SCTqrResult. This Result contains the name and the IBAN (Mandatory fileds), bic, amount, purpose, remittance or reference, which are optional fields"
-  
+
 #2
-  spec.version      = "1.0.2"
-    
+  spec.version      = "1.0.3"
+
 #3
   spec.license      = { :type => "MIT", :file => "LICENSE" }
-    
-#4  
+
+#4
   spec.author       = { "Geza Csiki" => "xphomeservice@yahoo.com" }
-  
+
 #5
   spec.homepage     = "https://github.com/csikigeza/SCTqrScanner"
 
 #6
   spec.source       = { :git => "https://github.com/csikigeza/SCTqrScanner.git", :tag => "v1.0.2" }
   spec.source_files  = "SCTqrScanner/**/*.{h,swift}"
-  spec.swift_version = "4.2" 
-  
+  spec.swift_version = "4.2"
+
 end
